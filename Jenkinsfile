@@ -4,8 +4,8 @@ multibranchPipelineJob('multibranch/main') {
 
     // Set branch sources
     branchSources {
-        git {
-            id('unique-branch-source-id') // Unique identifier for branch source
+        github {
+            id('multibranch/main') // Unique identifier for branch source
             remote('https://github.com/aspiringsoftwareprogrammer/testing_cron_auto_triggers.git') // Replace with your repository URL
             includes('*') // Define which branches to include
         }
