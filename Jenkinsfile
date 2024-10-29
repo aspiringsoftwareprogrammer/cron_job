@@ -1,4 +1,4 @@
-multibranchPipelineJob('multibranch-pipeline') {
+multibranchPipelineJob('multibranch/main') {
     // Description of the job
     description('An example multibranch pipeline job created via Jenkins Job DSL')
 
