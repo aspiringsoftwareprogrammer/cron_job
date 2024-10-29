@@ -7,6 +7,7 @@ multibranchPipelineJob('multibranch/main') {
         github {
             id('multibranch/main') // Unique identifier for branch source
             remote('https://github.com/aspiringsoftwareprogrammer/testing_cron_auto_triggers.git') // Replace with your repository URL
+            credentialsId('github-token')
             includes('*') // Define which branches to include
         }
     }
